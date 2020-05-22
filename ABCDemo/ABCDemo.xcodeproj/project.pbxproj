@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9EBFD6B0DEB87D7B6E73D20 /* libPods-ABCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E081841C7C8B489C1CFE53 /* libPods-ABCDemo.a */; };
 		D7620B3A22A501A300C5970D /* ImagePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7620B3922A501A300C5970D /* ImagePreviewViewController.m */; };
 		D7B775BD228A8DD100BC92F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B775BC228A8DD100BC92F9 /* AppDelegate.m */; };
 		D7B775C0228A8DD100BC92F9 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B775BF228A8DD100BC92F9 /* MasterViewController.m */; };
@@ -20,7 +21,11 @@
 		D7F3ABF92477C64D009237DA /* ImageFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F3ABF82477C64D009237DA /* ImageFilterViewController.m */; };
 		D7F3ABFC2477C681009237DA /* CutAndRotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F3ABFB2477C681009237DA /* CutAndRotateViewController.m */; };
 		D7F3ABFF2477C6E9009237DA /* ImageToPdfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F3ABFE2477C6E9009237DA /* ImageToPdfViewController.m */; };
-		FBDE9B7D8F18F8656FCF78C6 /* libPods-ABCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E95418BFB90D600BAF2C98 /* libPods-ABCDemo.a */; };
+		DEA221642477DA5E00EB50A0 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA221632477DA5E00EB50A0 /* UIImage+Extension.m */; };
+		DEA221672477DA8F00EB50A0 /* ABCMagnifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA221652477DA8F00EB50A0 /* ABCMagnifierView.m */; };
+		DEA2216C2477E51600EB50A0 /* ABCGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA2216B2477E51600EB50A0 /* ABCGestureViewController.m */; };
+		DEA2217C2477FAB100EB50A0 /* example_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DEA2217B2477FAB100EB50A0 /* example_image.jpg */; };
+		DEA2217E2477FB6A00EB50A0 /* example_image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DEA2217D2477FB6A00EB50A0 /* example_image1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B9FFC8073E6F74F31538E4A /* Pods-ABCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABCDemo.debug.xcconfig"; path = "Target Support Files/Pods-ABCDemo/Pods-ABCDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		15AFFCBEE1B837E68B61FA83 /* Pods-ABCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABCDemo.release.xcconfig"; path = "Target Support Files/Pods-ABCDemo/Pods-ABCDemo.release.xcconfig"; sourceTree = "<group>"; };
-		B3E95418BFB90D600BAF2C98 /* libPods-ABCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ABCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A3FBF6A8E9B0313D1D3E4D4 /* Pods-ABCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABCDemo.debug.xcconfig"; path = "Target Support Files/Pods-ABCDemo/Pods-ABCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		92E081841C7C8B489C1CFE53 /* libPods-ABCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ABCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D70CC23F243606A700CA7015 /* ABCCommonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ABCCommonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D70CC242243606B100CA7015 /* ABCWhiteBoardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ABCWhiteBoardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D70CC245243606B800CA7015 /* ABCCameraKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ABCCameraKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +81,17 @@
 		D7F3ABFD2477C6E9009237DA /* ImageToPdfViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageToPdfViewController.h; sourceTree = "<group>"; };
 		D7F3ABFE2477C6E9009237DA /* ImageToPdfViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageToPdfViewController.m; sourceTree = "<group>"; };
 		D7F3AC002477C703009237DA /* ABCPDFKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ABCPDFKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA221622477DA5E00EB50A0 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		DEA221632477DA5E00EB50A0 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		DEA221652477DA8F00EB50A0 /* ABCMagnifierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCMagnifierView.m; sourceTree = "<group>"; };
+		DEA221662477DA8F00EB50A0 /* ABCMagnifierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCMagnifierView.h; sourceTree = "<group>"; };
+		DEA2216A2477E51600EB50A0 /* ABCGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCGestureViewController.h; sourceTree = "<group>"; };
+		DEA2216B2477E51600EB50A0 /* ABCGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCGestureViewController.m; sourceTree = "<group>"; };
+		DEA2216D2477E5FE00EB50A0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DEA2216E2477E63800EB50A0 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		DEA2217B2477FAB100EB50A0 /* example_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = example_image.jpg; sourceTree = "<group>"; };
+		DEA2217D2477FB6A00EB50A0 /* example_image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = example_image1.jpg; sourceTree = "<group>"; };
+		FFDDBD6C6317808237E7D551 /* Pods-ABCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABCDemo.release.xcconfig"; path = "Target Support Files/Pods-ABCDemo/Pods-ABCDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBDE9B7D8F18F8656FCF78C6 /* libPods-ABCDemo.a in Frameworks */,
+				C9EBFD6B0DEB87D7B6E73D20 /* libPods-ABCDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,11 +120,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		25F568E3F68786CE2315F0B2 /* Pods */ = {
+		46B091775156063A75297169 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0B9FFC8073E6F74F31538E4A /* Pods-ABCDemo.debug.xcconfig */,
-				15AFFCBEE1B837E68B61FA83 /* Pods-ABCDemo.release.xcconfig */,
+				1A3FBF6A8E9B0313D1D3E4D4 /* Pods-ABCDemo.debug.xcconfig */,
+				FFDDBD6C6317808237E7D551 /* Pods-ABCDemo.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -125,7 +140,7 @@
 				D70CC242243606B100CA7015 /* ABCWhiteBoardKit.framework */,
 				D70CC23F243606A700CA7015 /* ABCCommonKit.framework */,
 				D7785FC02433624700D0D92B /* ABCDetector.framework */,
-				B3E95418BFB90D600BAF2C98 /* libPods-ABCDemo.a */,
+				92E081841C7C8B489C1CFE53 /* libPods-ABCDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,7 +153,7 @@
 				D7B775E1228A8DD300BC92F9 /* ABCDemoUITests */,
 				D7B775B9228A8DD100BC92F9 /* Products */,
 				D7785FBF2433624700D0D92B /* Frameworks */,
-				25F568E3F68786CE2315F0B2 /* Pods */,
+				46B091775156063A75297169 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,25 +170,25 @@
 		D7B775BA228A8DD100BC92F9 /* ABCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DEA2215B2477D92700EB50A0 /* Camera */,
+				DEA2215C2477D93500EB50A0 /* CutAndRotate */,
+				DEA2215D2477D94400EB50A0 /* ImageFilter */,
+				DEA2215E2477D94B00EB50A0 /* ImageToPdf */,
 				D7B775BB228A8DD100BC92F9 /* AppDelegate.h */,
 				D7B775BC228A8DD100BC92F9 /* AppDelegate.m */,
 				D7B775BE228A8DD100BC92F9 /* MasterViewController.h */,
 				D7B775BF228A8DD100BC92F9 /* MasterViewController.m */,
+				DEA221622477DA5E00EB50A0 /* UIImage+Extension.h */,
+				DEA221632477DA5E00EB50A0 /* UIImage+Extension.m */,
+				DEA2217B2477FAB100EB50A0 /* example_image.jpg */,
+				DEA2217D2477FB6A00EB50A0 /* example_image1.jpg */,
+				DEA2216D2477E5FE00EB50A0 /* PrefixHeader.pch */,
+				DEA2216E2477E63800EB50A0 /* Define.h */,
 				D7B775C4228A8DD100BC92F9 /* Main.storyboard */,
 				D7B775C7228A8DD300BC92F9 /* Assets.xcassets */,
 				D7B775C9228A8DD300BC92F9 /* LaunchScreen.storyboard */,
 				D7B775CC228A8DD300BC92F9 /* Info.plist */,
 				D7B775CD228A8DD300BC92F9 /* main.m */,
-				D7B775FC228A904900BC92F9 /* CameraViewController.h */,
-				D7B775FD228A904900BC92F9 /* CameraViewController.m */,
-				D7620B3822A501A300C5970D /* ImagePreviewViewController.h */,
-				D7620B3922A501A300C5970D /* ImagePreviewViewController.m */,
-				D7F3ABF72477C64D009237DA /* ImageFilterViewController.h */,
-				D7F3ABF82477C64D009237DA /* ImageFilterViewController.m */,
-				D7F3ABFA2477C681009237DA /* CutAndRotateViewController.h */,
-				D7F3ABFB2477C681009237DA /* CutAndRotateViewController.m */,
-				D7F3ABFD2477C6E9009237DA /* ImageToPdfViewController.h */,
-				D7F3ABFE2477C6E9009237DA /* ImageToPdfViewController.m */,
 			);
 			path = ABCDemo;
 			sourceTree = "<group>";
@@ -196,6 +211,48 @@
 			path = ABCDemoUITests;
 			sourceTree = "<group>";
 		};
+		DEA2215B2477D92700EB50A0 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				D7B775FC228A904900BC92F9 /* CameraViewController.h */,
+				D7B775FD228A904900BC92F9 /* CameraViewController.m */,
+				D7620B3822A501A300C5970D /* ImagePreviewViewController.h */,
+				D7620B3922A501A300C5970D /* ImagePreviewViewController.m */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		DEA2215C2477D93500EB50A0 /* CutAndRotate */ = {
+			isa = PBXGroup;
+			children = (
+				D7F3ABFA2477C681009237DA /* CutAndRotateViewController.h */,
+				D7F3ABFB2477C681009237DA /* CutAndRotateViewController.m */,
+				DEA2216A2477E51600EB50A0 /* ABCGestureViewController.h */,
+				DEA2216B2477E51600EB50A0 /* ABCGestureViewController.m */,
+				DEA221662477DA8F00EB50A0 /* ABCMagnifierView.h */,
+				DEA221652477DA8F00EB50A0 /* ABCMagnifierView.m */,
+			);
+			path = CutAndRotate;
+			sourceTree = "<group>";
+		};
+		DEA2215D2477D94400EB50A0 /* ImageFilter */ = {
+			isa = PBXGroup;
+			children = (
+				D7F3ABF72477C64D009237DA /* ImageFilterViewController.h */,
+				D7F3ABF82477C64D009237DA /* ImageFilterViewController.m */,
+			);
+			path = ImageFilter;
+			sourceTree = "<group>";
+		};
+		DEA2215E2477D94B00EB50A0 /* ImageToPdf */ = {
+			isa = PBXGroup;
+			children = (
+				D7F3ABFD2477C6E9009237DA /* ImageToPdfViewController.h */,
+				D7F3ABFE2477C6E9009237DA /* ImageToPdfViewController.m */,
+			);
+			path = ImageToPdf;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,11 +260,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7B775E7228A8DD300BC92F9 /* Build configuration list for PBXNativeTarget "ABCDemo" */;
 			buildPhases = (
-				7FF1E8D421F08801F758E2E6 /* [CP] Check Pods Manifest.lock */,
+				8BC37F7520A3C843AC4B8654 /* [CP] Check Pods Manifest.lock */,
 				D7B775B4228A8DD100BC92F9 /* Sources */,
 				D7B775B5228A8DD100BC92F9 /* Frameworks */,
 				D7B775B6228A8DD100BC92F9 /* Resources */,
-				5920D04C67834422507B2625 /* [CP] Embed Pods Frameworks */,
+				6AFF7435C5EF3FDCA2C8BA38 /* [CP] Embed Pods Frameworks */,
+				3F26EB11ECBDDF6B030A6437 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,7 +361,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7B775CB228A8DD300BC92F9 /* LaunchScreen.storyboard in Resources */,
+				DEA2217E2477FB6A00EB50A0 /* example_image1.jpg in Resources */,
 				D7B775C8228A8DD300BC92F9 /* Assets.xcassets in Resources */,
+				DEA2217C2477FAB100EB50A0 /* example_image.jpg in Resources */,
 				D7B775C6228A8DD100BC92F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,7 +385,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5920D04C67834422507B2625 /* [CP] Embed Pods Frameworks */ = {
+		3F26EB11ECBDDF6B030A6437 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ABCDemo/Pods-ABCDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ABCDemo/Pods-ABCDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ABCDemo/Pods-ABCDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AFF7435C5EF3FDCA2C8BA38 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -342,7 +419,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ABCDemo/Pods-ABCDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7FF1E8D421F08801F758E2E6 /* [CP] Check Pods Manifest.lock */ = {
+		8BC37F7520A3C843AC4B8654 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -374,10 +451,13 @@
 				D7B775FE228A904900BC92F9 /* CameraViewController.m in Sources */,
 				D7B775C0228A8DD100BC92F9 /* MasterViewController.m in Sources */,
 				D7B775BD228A8DD100BC92F9 /* AppDelegate.m in Sources */,
+				DEA221672477DA8F00EB50A0 /* ABCMagnifierView.m in Sources */,
 				D7620B3A22A501A300C5970D /* ImagePreviewViewController.m in Sources */,
+				DEA221642477DA5E00EB50A0 /* UIImage+Extension.m in Sources */,
 				D7F3ABFF2477C6E9009237DA /* ImageToPdfViewController.m in Sources */,
 				D7F3ABF92477C64D009237DA /* ImageFilterViewController.m in Sources */,
 				D7F3ABFC2477C681009237DA /* CutAndRotateViewController.m in Sources */,
+				DEA2216C2477E51600EB50A0 /* ABCGestureViewController.m in Sources */,
 				D7B775CE228A8DD300BC92F9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,7 +629,7 @@
 		};
 		D7B775E8228A8DD300BC92F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B9FFC8073E6F74F31538E4A /* Pods-ABCDemo.debug.xcconfig */;
+			baseConfigurationReference = 1A3FBF6A8E9B0313D1D3E4D4 /* Pods-ABCDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -557,6 +637,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67W5984PLX;
 				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ABCDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = ABCDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -576,7 +658,7 @@
 		};
 		D7B775E9228A8DD300BC92F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15AFFCBEE1B837E68B61FA83 /* Pods-ABCDemo.release.xcconfig */;
+			baseConfigurationReference = FFDDBD6C6317808237E7D551 /* Pods-ABCDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -584,6 +666,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67W5984PLX;
 				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ABCDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = ABCDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

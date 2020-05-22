@@ -7,14 +7,12 @@
 //
 
 #import "CameraViewController.h"
-#import <ABCCameraKit/ABCCameraKit.h>
 #import "ImagePreviewViewController.h"
 
-@interface CameraViewController() <ABCCameraViewDelegate>
+@interface CameraViewController () <ABCCameraViewDelegate>
 
-@property(nonatomic, strong) ABCCameraView *cameraView;
-
-@property(nonatomic, strong) UIButton *cameraBtn;
+@property (nonatomic, strong) ABCCameraView *cameraView;
+@property (nonatomic, strong) UIButton *cameraBtn;
 
 @end
 
@@ -28,44 +26,38 @@
     [self.view addSubview:self.cameraBtn];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
     [_cameraView startPreview];
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
+- (void)viewWillDisappear:(BOOL)animated {
     [_cameraView stopPreview];
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
     [_cameraView destory];
 }
 
 #pragma mark - events
--(void) onCameraClick:(id) sender
-{
+- (void)onCameraClick:(id)sender {
     [_cameraView take];
 }
 
--(ABCCameraView *) cameraView
-{
-    if(!_cameraView){
+- (ABCCameraView *)cameraView {
+    if (!_cameraView) {
         _cameraView = [[ABCCameraView alloc] initWithFrame:self.view.bounds];
         _cameraView.delegate = self;
     }
     return _cameraView;
 }
 
--(UIButton *) cameraBtn
-{
+- (UIButton *)cameraBtn {
     if (!_cameraBtn) {
         _cameraBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _cameraBtn.contentMode = UIViewContentModeCenter;
         [_cameraBtn setImage:[UIImage imageNamed:@"cameta_shoot"] forState:UIControlStateNormal];
         [_cameraBtn addTarget:self action:@selector(onCameraClick:) forControlEvents:UIControlEventTouchUpInside];
-        _cameraBtn.frame = CGRectMake(self.view.bounds.size.width/2-50, self.view.bounds.size.height -100, 100, 100);
+        _cameraBtn.frame = CGRectMake(self.view.bounds.size.width / 2 - 50, self.view.bounds.size.height - 100, 100, 100);
         _cameraBtn.layer.shadowColor = [UIColor blackColor].CGColor;
         _cameraBtn.layer.shadowOffset = CGSizeMake(0, -3);
         _cameraBtn.layer.shadowRadius = 5;
@@ -74,13 +66,10 @@
     return _cameraBtn;
 }
 
--(void) onPictureTaken
-{
-    
+- (void)onPictureTaken {
 }
 
--(void) onPictureSaved:(UIImage *) image quad:(Quadrilateral *) quad
-{
+- (void)onPictureSaved:(UIImage *)image quad:(Quadrilateral *)quad {
     ImagePreviewViewController *previewCtrl = [[ImagePreviewViewController alloc] init];
     UIImage *finalimage = [DetectRectanglesUtils imageWithQuad:image quad:quad];
     previewCtrl.image = image;
@@ -88,9 +77,7 @@
     [self.navigationController pushViewController:previewCtrl animated:YES];
 }
 
--(void) onCameraError:(ABCCameraError *) error
-{
-    
+- (void)onCameraError:(ABCCameraError *)error {
 }
 
 /*

@@ -8,6 +8,9 @@
 
 #import "MasterViewController.h"
 #import "CameraViewController.h"
+#import "CutAndRotateViewController.h"
+#import "ImageFilterViewController.h"
+#import "ImageToPdfViewController.h"
 
 @interface MasterViewController ()
 
@@ -21,25 +24,21 @@
     // Do any additional setup after loading the view.
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.objects = [NSMutableArray arrayWithObjects:@"Camera",@"CutAndRotate",@"ImageFilter",@"ImageToPdf", nil];
+    self.objects = [NSMutableArray arrayWithObjects:@"Camera", @"CutAndRotate", @"ImageFilter", @"ImageToPdf", nil];
 }
-
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 }
 
 #pragma mark - Table View
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.objects.count;
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
@@ -49,19 +48,22 @@
     return cell;
 }
 
-
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    NSString *className = [NSString stringWithFormat:@"%@ViewController",cell.textLabel.text];
-    id cls = [[NSClassFromString(className) alloc]init];
+    NSString *className = [NSString stringWithFormat:@"%@ViewController", cell.textLabel.text];
+    id cls = [[NSClassFromString(className) alloc] init];
     if (cls && [cls isKindOfClass:[UIViewController class]]) {
         UIViewController *viewCtrl = (UIViewController *)cls;
+        if ([cls isKindOfClass:[ImageToPdfViewController class]]) {
+            viewCtrl.modalPresentationStyle = UIModalPresentationFullScreen;
+            [self presentViewController:viewCtrl animated:YES completion:nil];
+            return;
+        }
         [self.navigationController pushViewController:viewCtrl animated:YES];
     }
 }

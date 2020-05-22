@@ -10,10 +10,8 @@
 
 @interface ImagePreviewViewController ()
 
-@property(nonatomic, strong) UIImageView *imageView;
-
-@property(nonatomic, strong) UIImageView *imageView2;
-
+@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) UIImageView *imageView2;
 
 @end
 
@@ -21,13 +19,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     _imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
     _imageView.contentMode = UIViewContentModeScaleAspectFit;
     _imageView.image = self.image;
     [self.view addSubview:_imageView];
-    
-    _imageView2 = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.bounds.size.width-100,self.view.bounds.size.height-100,100,100)];
+
+    _imageView2 = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.bounds.size.width - 100, self.view.bounds.size.height - 100, 100, 100)];
     _imageView2.contentMode = UIViewContentModeScaleAspectFit;
     _imageView2.image = self.quadImage;
     [self.view addSubview:_imageView2];

@@ -1,0 +1,6 @@
+framework module ABCCommonKit {
+  umbrella header "ABCCommonKit.h"
+
+  export *
+  module * { export * }
+}

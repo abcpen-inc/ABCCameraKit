@@ -1,0 +1,6 @@
+framework module ABCOpenCVImageKit {
+  umbrella header "ABCOpenCVImageKit.h"
+
+  export *
+  module * { export * }
+}

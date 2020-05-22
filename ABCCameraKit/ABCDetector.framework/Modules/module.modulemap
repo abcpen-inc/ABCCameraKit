@@ -1,0 +1,6 @@
+framework module ABCDetector {
+  umbrella header "ABCDetector.h"
+
+  export *
+  module * { export * }
+}

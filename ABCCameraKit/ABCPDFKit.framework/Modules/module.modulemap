@@ -1,0 +1,6 @@
+framework module ABCPDFKit {
+  umbrella header "ABCPDFKit.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module ABCCameraKit {
+  umbrella header "ABCCameraKit.h"
+
+  export *
+  module * { export * }
+}

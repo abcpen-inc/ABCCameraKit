@@ -1,0 +1,6 @@
+framework module ABCAuthKit {
+  umbrella header "ABCAuthKit.h"
+
+  export *
+  module * { export * }
+}

@@ -29,7 +29,7 @@ pod 'ABCCameraKit', '~>0.0.1'
 ### ABCCameraKit快速集成
 #### 授权(生成ABCCameraKit 授权用的secret)
 
-～～～
+~~~
 /**
  secret建议放在服务端生成
  */
@@ -44,9 +44,4 @@ pod 'ABCCameraKit', '~>0.0.1'
     secret = [NSString stringWithFormat:@"%@.%@",expireTime,secret];//拼接expireTime 和secert 逗号隔开
     return secret;
 }
-～～～
-
-
-
-
-
+~~~
